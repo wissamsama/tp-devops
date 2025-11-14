@@ -23,7 +23,7 @@ jobs:
           pip install flake8 nose
 
       - name: Lint with flake8
-        run: flake8 ||true 
-        
+        run: flake8 . ||true 
+
       - name: Run nose tests
         run: nosetests --with-xunit
